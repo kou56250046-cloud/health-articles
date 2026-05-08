@@ -6,7 +6,9 @@ export type Category =
   | 'pulmonary'
   | 'nutrition'
   | 'sleep'
-  | 'mindfulness';
+  | 'mindfulness'
+  | 'morning-routine'
+  | 'night-routine';
 
 export type Difficulty = 1 | 2 | 3 | 4 | 5;
 

@@ -15,7 +15,9 @@ export const CATEGORIES: CategoryConfig[] = [
   { id: 'pulmonary',   label: '肺活',             icon: '🫁', description: '肺機能強化・有酸素系' },
   { id: 'nutrition',   label: '栄養・食事',       icon: '🥗', description: '薬膳・スーパーフード・食習慣' },
   { id: 'sleep',       label: '睡眠',             icon: '🌙', description: '睡眠改善・リカバリー' },
-  { id: 'mindfulness', label: 'マインドフルネス', icon: '✨', description: 'ストレス管理・精神衛生' },
+  { id: 'mindfulness',     label: 'マインドフルネス',     icon: '✨', description: 'ストレス管理・精神衛生' },
+  { id: 'morning-routine', label: 'モーニングルーティン', icon: '🌅', description: '朝の習慣・若返り・活力' },
+  { id: 'night-routine',   label: 'ナイトルーティン',     icon: '🌛', description: '夜の習慣・回復・睡眠準備' },
 ];
 
 export const CATEGORY_MAP = Object.fromEntries(
