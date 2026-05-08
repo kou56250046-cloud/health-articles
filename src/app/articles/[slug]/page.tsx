@@ -5,6 +5,7 @@ import { ArticleHeader } from '@/components/article/ArticleHeader';
 import { ArticleBody } from '@/components/article/ArticleBody';
 import { ArticleReferences } from '@/components/article/ArticleReferences';
 import { BookmarkButton } from '@/components/article/BookmarkButton';
+import { FadeIn } from '@/components/motion/FadeIn';
 import Link from 'next/link';
 
 export { generateStaticParams };
@@ -30,22 +31,31 @@ export default async function ArticlePage({ params }: Props) {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
-      <Link
-        href="/"
-        className="inline-flex items-center gap-1 text-sm text-sage-600 hover:text-forest-600 mb-6"
-      >
-        ← 記事一覧に戻る
-      </Link>
+      <FadeIn from="left" delay={0}>
+        <Link
+          href="/"
+          className="inline-flex items-center gap-1 text-sm text-sage-600 hover:text-forest-600 mb-6 group"
+        >
+          <span className="transition-transform group-hover:-translate-x-1 duration-200">←</span>
+          記事一覧に戻る
+        </Link>
+      </FadeIn>
 
-      <ArticleHeader article={article} />
+      <FadeIn delay={0.08}>
+        <ArticleHeader article={article} />
+      </FadeIn>
 
-      <div className="flex justify-end mb-6">
+      <FadeIn delay={0.18} className="flex justify-end mb-6">
         <BookmarkButton slug={article.slug} />
-      </div>
+      </FadeIn>
 
-      <ArticleBody content={article.content} />
+      <FadeIn delay={0.26}>
+        <ArticleBody content={article.content} />
+      </FadeIn>
 
-      <ArticleReferences references={article.references} />
+      <FadeIn delay={0.34}>
+        <ArticleReferences references={article.references} />
+      </FadeIn>
     </div>
   );
 }
