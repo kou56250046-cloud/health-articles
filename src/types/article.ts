@@ -8,7 +8,8 @@ export type Category =
   | 'sleep'
   | 'mindfulness'
   | 'morning-routine'
-  | 'night-routine';
+  | 'night-routine'
+  | 'self-development';
 
 export type Difficulty = 1 | 2 | 3 | 4 | 5;
 
