@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* Forest: 深い森緑（プライマリ） */
+  --color-forest-50: #f0f7f0;
+  --color-forest-100: #d8ecd8;
+  --color-forest-200: #b3d9b3;
+  --color-forest-300: #82bf82;
+  --color-forest-400: #52a052;
+  --color-forest-500: #3a8a3a;
+  --color-forest-600: #2d6e2d;
+  --color-forest-700: #235523;
+  --color-forest-800: #1c441c;
+  --color-forest-900: #163516;
+
+  /* Earth: アースブラウン（アクセント） */
+  --color-earth-50: #fdf8f2;
+  --color-earth-100: #f8eddb;
+  --color-earth-200: #f0d9b3;
+  --color-earth-300: #e5be80;
+  --color-earth-400: #d9a04d;
+  --color-earth-500: #c8862a;
+  --color-earth-600: #a86820;
+  --color-earth-700: #855018;
+  --color-earth-800: #6b3f14;
+  --color-earth-900: #573311;
+
+  /* Sage: セージグリーン（サブ） */
+  --color-sage-50: #f4f7f2;
+  --color-sage-100: #e3edd9;
+  --color-sage-200: #c8dbb4;
+  --color-sage-300: #a5c285;
+  --color-sage-400: #82a85a;
+  --color-sage-500: #658e3c;
+  --color-sage-600: #507030;
+  --color-sage-700: #3f5727;
+  --color-sage-800: #344621;
+  --color-sage-900: #2b3b1c;
+
+  /* Terracotta: テラコッタ（強調） */
+  --color-terracotta-50: #fdf4f0;
+  --color-terracotta-100: #fae5d8;
+  --color-terracotta-200: #f5cab1;
+  --color-terracotta-300: #eda47f;
+  --color-terracotta-400: #e3784d;
+  --color-terracotta-500: #d8562a;
+  --color-terracotta-600: #bc4220;
+  --color-terracotta-700: #9c341b;
+  --color-terracotta-800: #7e2c1a;
+  --color-terracotta-900: #682719;
+
+  /* Linen: クリーム・リネン（背景） */
+  --color-linen-50: #fdfcfa;
+  --color-linen-100: #f9f5ef;
+  --color-linen-200: #f2eadc;
+  --color-linen-300: #e8d9c3;
+  --color-linen-400: #d9c3a0;
+  --color-linen-500: #c9ab7d;
+  --color-linen-600: #b08e5a;
+  --color-linen-700: #8f7044;
+  --color-linen-800: #755b37;
+  --color-linen-900: #604b2e;
+
+  --font-sans: 'Noto Sans JP', sans-serif;
+  --font-serif: 'Noto Serif JP', serif;
+}
+
+body {
+  background-color: var(--color-linen-50);
+  color: var(--color-forest-900);
+  font-family: var(--font-sans);
+}
