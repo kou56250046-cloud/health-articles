@@ -19,6 +19,7 @@ export const CATEGORIES: CategoryConfig[] = [
   { id: 'morning-routine', label: 'モーニングルーティン', icon: '🌅', description: '朝の習慣・若返り・活力' },
   { id: 'night-routine',    label: 'ナイトルーティン',     icon: '🌛', description: '夜の習慣・回復・睡眠準備' },
   { id: 'self-development', label: '自己啓発',             icon: '🧠', description: '思考法・記憶術・本質的成長' },
+  { id: 'spiritual',        label: 'スピリチュアル',       icon: '🔮', description: '魂・意識・霊的な視点から見た人生の設計' },
 ];
 
 export const CATEGORY_MAP = Object.fromEntries(
